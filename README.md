@@ -11,7 +11,7 @@
 <p>This is my first webpage, and I feel excited to create and explore
    how websites work using HTML and basic tags. 
    I hope you will enjoy learning.</p>
-<img src="download.png" alt="Sample Image" width="300">
+<img src="C:\Users\VICTUS\OneDrive\Desktop\HTML" alt="Sample Image" width="300">
 <p>Visit <a href="https://www.google.com" target="_blank">Example Website</a> for more info.</p>
 <br> <p>This is <b>bold text.</b></p>
 <p>this is <i>italic text.</i></p>
