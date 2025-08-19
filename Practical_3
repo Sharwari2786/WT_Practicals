@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yeshwantrao Chavan College of Engineering</title>
+    <style type="text/css">
+        body {
+              background-color: rgb(250, 207, 158);
+              background-image: url('ycce.png');
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-attachment: fixed;
+              background-size: contain;
+              color: #000000;
+              font-family: Arial, sans-serif;
+}
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+            margin-top: 20px;
+        }
+      
+        .cursor-default { cursor: default; }
+        .cursor-pointer { cursor: pointer; }
+        .cursor-crosshair { cursor: crosshair; }
+        .cursor-text { cursor: text; }
+        .cursor-move { cursor: move; }
+        .cursor-wait { cursor: wait; }
+        .cursor-help { cursor: help; }
+        .cursor-not-allowed { cursor: not-allowed; }
+
+      
+        a:link {
+            text-decoration: none;
+            color: blue;
+            cursor: pointer;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+
+        .cursor-box {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #333;
+            background-color: rgba(69, 42, 42, 0.8);
+            color: white;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yeshwantrao Chavan College of Engineering</h1>
+
+    <div class="highlight cursor-pointer">
+        One of the <strong>BEST</strong> Engineering Colleges in Nagpur
+    </div>
+
+    <p>
+        Our highest package is of <strong>9.5 LPA</strong>
+    </p>
+
+    <p>
+        Visit our official website for more details: 
+        <a href="https://ycce.edu/">Yeshwantrao Chavan College of Engineering</a>
+    </p>
+
+    <p>
+        Details for CAP admission, visit this website: 
+        <a href="https://www.shiksha.com/college/yeshwantrao-chavan-college-of-engineering-nagpur-27357">
+            Shiksha College Info
+        </a>
+    </p>
+
+    <h2>Types of Cursors</h2>
+
+    <div class="cursor-box cursor-default">Default Cursor</div>
+    <div class="cursor-box cursor-pointer">Pointer Cursor</div>
+    <div class="cursor-box cursor-crosshair">Crosshair Cursor</div>
+    <div class="cursor-box cursor-text">Text Cursor</div>
+    <div class="cursor-box cursor-move">Move Cursor</div>
+    <div class="cursor-box cursor-wait">Wait Cursor</div>
+    <div class="cursor-box cursor-help">Help Cursor</div>
+    <div class="cursor-box cursor-not-allowed">Not Allowed Cursor</div>
+
+    <footer class="cursor-not-allowed">
+        Thank you for visiting our website
+    </footer>
+</body>
+</html>
