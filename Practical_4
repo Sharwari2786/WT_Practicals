@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 4: JSON</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #f4e1f1;
+      margin: 25px;
+    }
+    .card {
+      background: #fffdf5;
+      border: 2px solid #888;
+      padding: 18px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 3px 3px 12px rgba(50, 50, 50, 0.2);
+    }
+    h3 {
+      margin: 8px 0;
+      color: darkred;
+    }
+    h5 {
+      margin: 8px 0;
+      color: rgb(34, 90, 140);
+      font-style: italic;
+    }
+  </style>
+
+  <script>
+    window.onload = function() {
+      var object1 = {
+        "Book": "Wonder",
+        "author": "R.J. Palacio",
+        "Description": "Wonder tells the inspiring story of Auggie, a boy with a facial difference, and his journey of friendship, kindness, and acceptance."
+      };
+      document.write("<div class='card'>");
+      document.write("<h3>Book: " + object1.Book + "</h3>");
+      document.write("<h3>Author: " + object1.author + "</h3>");
+      document.write("<h5>" + object1.Description + "</h5>");
+      document.write("</div>");
+
+      var object2 = {
+        "Book": "The Diary of a Young Girl",
+        "author": "Anne Frank",
+        "Description": "The Diary of a Young Girl is Anne Frank’s moving journal written during the Holocaust, showing her courage, hopes, and fears while in hiding."
+      };
+      document.write("<div class='card'>");
+      document.write("<h3>Book: " + object2.Book + "</h3>");
+      document.write("<h3>Author: " + object2.author + "</h3>");
+      document.write("<h5>" + object2.Description + "</h5>");
+      document.write("</div>");
+
+      var object3 = {
+        "Book": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "Description": "The first book in the Harry Potter series introduces us to Harry, Hogwarts School of Witchcraft and Wizardry, and the magical adventure that begins it all."
+      };
+      document.write("<div class='card'>");
+      document.write("<h3>Book: " + object3.Book + "</h3>");
+      document.write("<h3>Author: " + object3.author + "</h3>");
+      document.write("<h5>" + object3.Description + "</h5>");
+      document.write("</div>");
+
+      var object4 = {
+        "Book": "Wings of Fire",
+        "author": "Dr. A.P.J. Abdul Kalam",
+        "Description": "Wings of Fire is the autobiography of Dr. A.P.J. Abdul Kalam, tracing his journey from a small town boy to India’s Missile Man and President."
+      };
+      document.write("<div class='card'>");
+      document.write("<h3>Book: " + object4.Book + "</h3>");
+      document.write("<h3>Author: " + object4.author + "</h3>");
+      document.write("<h5>" + object4.Description + "</h5>");
+      document.write("</div>");
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>
