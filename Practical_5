@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Information</title>
+  <style>
+    body {
+      background-color: #f5c1d6; 
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #cc0066;
+    }
+    input {
+      padding: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0066;
+    }
+    button {
+      background-color: #ff4d88; 
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #e6005c;
+    }
+    #employee-info {
+      margin-top: 20px;
+      padding: 15px;
+      border: 2px solid #cc0066;
+      border-radius: 10px;
+      background: #fff0f5; 
+      width: fit-content;
+    }
+  </style>
+</head>
+<body>
+  <h1>Employee Information</h1>
+
+  <label>Enter Employee Number: </label>
+  <input type="number" id="empNumber" placeholder="e.g. 1">
+  <button onclick="getEmployee()">Get Employee Info</button>
+
+  <h2>Selected Employee's Data:</h2>
+  <div id="employee-info"></div>
+
+  <script>
+  
+    const employees = [
+      {
+        id: "101",
+        name: "Sharwari Kapse",
+        department: "IT",
+        designation: "Software Engineer",
+        email: "shrwarikapse123@gmail.com",
+        salary: "1000000 LPA"
+      },
+      {
+        id: "102",
+        name: "Hemant Kapse",
+        department: "HR",
+        designation: "HR Manager",
+        email: "hemantkapse456@gmail.com",
+        salary: "700000 LPA"
+      },
+      {
+        id: "103",
+        name: "Darshana Kapse",
+        department: "Finance",
+        designation: "Accountant",
+        email: "darshanakapse789@gmail.com",
+        salary: "600000 LPA"
+      }
+    ];
+
+    function getEmployee() {
+      const empNum = document.getElementById("empNumber").value;
+
+      if (empNum >= 1 && empNum <= employees.length) {
+        const emp = employees[empNum - 1];
+        document.getElementById("employee-info").innerHTML = `
+          <p><strong>ID:</strong> ${emp.id}</p>
+          <p><strong>Name:</strong> ${emp.name}</p>
+          <p><strong>Department:</strong> ${emp.department}</p>
+          <p><strong>Designation:</strong> ${emp.designation}</p>
+          <p><strong>Email:</strong> ${emp.email}</p>
+          <p><strong>Salary:</strong> ${emp.salary}</p>
+        `;
+      } else {
+        alert("Employee number out of range. Total employees: " + employees.length);
+      }
+    }
+  </script>
+</body>
+</html>
